@@ -65,7 +65,7 @@ export function ShoppingListItem({
       </View>
       <TouchableOpacity hitSlop={20} onPress={handleDelete}>
         <AntDesign
-          name="closecircle"
+          name="close-circle"
           size={24}
           color={isCompleted ? theme.colorGrey : theme.colorRed}
         />

@@ -32,7 +32,7 @@ type CountdownStatus = {
 };
 
 export default function CounterScreen() {
-  const confettiRef = useRef<any>();
+  const confettiRef = useRef<any>(null);
   const [countdownState, setCountdownState] =
     useState<PersistedCountdownState>();
   const [status, setStatus] = useState<CountdownStatus>({
@@ -82,6 +82,7 @@ export default function CounterScreen() {
           title: "Car wash overdue!",
         },
         trigger: {
+          type: Notifications.SchedulableTriggerInputTypes.TIME_INTERVAL,
           seconds: frequency / 1000,
         },
       });

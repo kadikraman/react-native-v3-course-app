@@ -22,7 +22,7 @@ export default function Layout() {
           title: "Counter",
           headerShown: false,
           tabBarIcon: ({ color, size }) => (
-            <AntDesign name="clockcircleo" size={size} color={color} />
+            <AntDesign name="clock-circle" size={size} color={color} />
           ),
         }}
       />
